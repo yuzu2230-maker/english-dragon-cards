@@ -2,8 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Audio</title>
 
 <style>
@@ -23,7 +22,6 @@ button{
     cursor:pointer;
 }
 </style>
-
 </head>
 
 <body>
@@ -34,18 +32,13 @@ button{
 
 <script>
 
-const button =
-    document.getElementById("playButton");
+const button = document.getElementById("playButton");
 
-const audio =
-    document.getElementById("audio");
+const audio = document.getElementById("audio");
 
 button.addEventListener("click", () => {
-
     audio.currentTime = 0;
-
     audio.play();
-
 });
 
 </script>
