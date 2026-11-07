@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Audio</title>
 
 <style>
@@ -28,12 +29,13 @@ button{
 
 <button id="playButton">🔊</button>
 
-./audio/apple.mp3</audio>
+<audio id="audio">
+    audio/apple.mp3
+</audio>
 
 <script>
 
 const button = document.getElementById("playButton");
-
 const audio = document.getElementById("audio");
 
 button.addEventListener("click", () => {
