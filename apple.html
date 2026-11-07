@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Audio</title>
 
 <style>
-body{
+body {
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
     margin:0;
-    background:white;
 }
 
-button{
+button {
     font-size:220px;
     border:none;
     background:none;
     cursor:pointer;
 }
 </style>
+
 </head>
 
 <body>
 
 <button id="playButton">🔊</button>
 
-<audio id="audio">
-    audio/apple.mp3
-</audio>
+./audio/apple.mp3</audio>
 
 <script>
 
-const button = document.getElementById("playButton");
-const audio = document.getElementById("audio");
+const button =
+    document.getElementById("playButton");
+
+const audio =
+    document.getElementById("audio");
 
 button.addEventListener("click", () => {
+
     audio.currentTime = 0;
+
     audio.play();
+
 });
 
 </script>
