@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,33 +7,30 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1">
 
-<title>Pronunciation</title>
+<title>Audio</title>
 
 <style>
 
 body{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     height:100vh;
-
     margin:0;
 
-    background:#ffffff;
-
+    background:white;
 }
 
 button{
 
-    font-size:48px;
+    font-size:120px;
 
-    padding:30px 60px;
+    border:none;
 
-    border-radius:20px;
+    background:none;
+
+    cursor:pointer;
 
 }
 
@@ -44,9 +40,7 @@ button{
 
 <body>
 
-<button onclick="playAudio()">
-🔊 発音する
-</button>
+<button onclick="playAudio()">🔊</button>
 
 <audio id="audio">
     audio/apple.mp3
@@ -54,7 +48,7 @@ button{
 
 <script>
 
-function playAudio(){
+function playAudio() {
 
     document
         .getElementById("audio")
