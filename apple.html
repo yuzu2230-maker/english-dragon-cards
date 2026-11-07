@@ -23,20 +23,31 @@ button{
     cursor:pointer;
 }
 </style>
+
 </head>
 
 <body>
 
-<button onclick="playAudio()">🔊</button>
+<button id="playButton">🔊</button>
 
 ./audio/apple.mp3</audio>
 
 <script>
-function playAudio() {
-    const audio = document.getElementById("audio");
+
+const button =
+    document.getElementById("playButton");
+
+const audio =
+    document.getElementById("audio");
+
+button.addEventListener("click", () => {
+
     audio.currentTime = 0;
+
     audio.play();
-}
+
+});
+
 </script>
 
 </body>
