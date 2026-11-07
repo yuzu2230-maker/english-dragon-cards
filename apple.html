@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Audio</title>
+
+<style>
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+    margin:0;
+    background:white;
+}
+
+button{
+    font-size:220px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
 <button onclick="playAudio()">🔊</button>
 
 <audio id="audio">
@@ -5,11 +37,10 @@
 </audio>
 
 <script>
+
 function playAudio() {
     document.getElementById("audio").play();
 }
-</script>
-
 
 </script>
 
